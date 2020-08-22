@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj": {}
+  },
+  "projects": {
+    "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj",
+        "projectName": "TurnUpPortal",
+        "projectPath": "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj",
+        "packagesPath": "/Users/brunomacedo/.nuget/packages/",
+        "outputPath": "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/brunomacedo/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[84.0.4147.3001, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

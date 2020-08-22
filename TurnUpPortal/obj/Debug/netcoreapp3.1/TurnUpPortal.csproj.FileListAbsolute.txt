@@ -1,0 +1,17 @@
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/Debug/netcoreapp3.1/TurnUpPortal.csprojAssemblyReference.cache
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/Debug/netcoreapp3.1/TurnUpPortal.AssemblyInfoInputs.cache
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/Debug/netcoreapp3.1/TurnUpPortal.AssemblyInfo.cs
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/Debug/netcoreapp3.1/TurnUpPortal.csproj.CoreCompileInputs.cache
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/bin/Debug/netcoreapp3.1/TurnUpPortal.deps.json
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/bin/Debug/netcoreapp3.1/TurnUpPortal.runtimeconfig.json
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/bin/Debug/netcoreapp3.1/TurnUpPortal.runtimeconfig.dev.json
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/bin/Debug/netcoreapp3.1/TurnUpPortal.dll
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/bin/Debug/netcoreapp3.1/TurnUpPortal.pdb
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/bin/Debug/netcoreapp3.1/WebDriver.Support.dll
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/bin/Debug/netcoreapp3.1/WebDriver.dll
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/Debug/netcoreapp3.1/TurnUpPortal.csproj.CopyComplete
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/Debug/netcoreapp3.1/TurnUpPortal.dll
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/Debug/netcoreapp3.1/TurnUpPortal.pdb
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/Debug/netcoreapp3.1/TurnUpPortal.genruntimeconfig.cache
+/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/bin/Debug/netcoreapp3.1/nunit.framework.dll

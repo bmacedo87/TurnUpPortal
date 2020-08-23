@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cVD0zDTZDYS38OoCt/nzzNTV8k57iobs1B5QbhOthPZNkra4uNRTzq85KmJVoyiUPwEKRXcXIbInLony78chKA==",
+  "dgSpecHash": "W0I/J6Ghb4qv8YR/UPruYqhoIrmZm93U8Nx71MmCGAhSkZS6cpQ3R8o5gYan7kLdT2eOA8xQhB7AO+Q1sFeT4A==",
   "success": true,
-  "projectFilePath": "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj",
+  "projectFilePath": "/Users/brunomacedo/Workspace/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj",
   "expectedPackageFiles": [
     "/Users/brunomacedo/.nuget/packages/microsoft.csharp/4.3.0/microsoft.csharp.4.3.0.nupkg.sha512",
     "/Users/brunomacedo/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",

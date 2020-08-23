@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj": {}
+    "/Users/brunomacedo/Workspace/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj": {}
   },
   "projects": {
-    "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj": {
+    "/Users/brunomacedo/Workspace/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj",
+        "projectUniqueName": "/Users/brunomacedo/Workspace/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj",
         "projectName": "TurnUpPortal",
-        "projectPath": "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj",
+        "projectPath": "/Users/brunomacedo/Workspace/TurnUpPortal/TurnUpPortal/TurnUpPortal.csproj",
         "packagesPath": "/Users/brunomacedo/.nuget/packages/",
-        "outputPath": "/Users/brunomacedo/Desktop/TurnUpPortal/TurnUpPortal/obj/",
+        "outputPath": "/Users/brunomacedo/Workspace/TurnUpPortal/TurnUpPortal/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

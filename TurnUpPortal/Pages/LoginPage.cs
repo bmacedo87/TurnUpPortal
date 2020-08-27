@@ -1,6 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using NUnit.Framework;
 
 namespace TurnUpPortal.Pages
 {
@@ -29,16 +30,27 @@ namespace TurnUpPortal.Pages
 
             //// ASSERTION ////
 
+            // Find 'Hello hari! hyperlink
+
             IWebElement findUsernameOnPage = driver.FindElement(By.XPath("//*[@id='logoutForm']/ul/li/a"));
+
+            // Validation/assertion
 
             if (findUsernameOnPage.Text == "Hello hari!")
             {
-                Console.WriteLine("Logged in succesfully, test passed!");
+                Assert.Pass("Logged in succesfully, test passed!");
             }
             else
             {
-                Console.WriteLine("Login unsuccessful, test failed!");
+                Assert.Fail("Login unsuccessful, test failed!");
             }
+
+
+
+            // Assert.That(findUsernameOnPage.Text, Is.EqualTo("Hello hari!"));
+
+
+ 
         }
     }
 }

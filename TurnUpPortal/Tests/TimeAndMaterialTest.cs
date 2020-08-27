@@ -1,48 +1,44 @@
-﻿using System;
-using System.Threading;
-using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+﻿using NUnit.Framework;
+using TurnUpPortal.Helpers;
 using TurnUpPortal.Pages;
 
 namespace TurnUpPortal
 {
-    class TimeAndMaterialTest
+    [TestFixture]
+    [Parallelizable]
+    public class TimeAndMaterialTest : CommonDriver
     {
-        static void Main(string[] args)
+
+    [Test, Order (1), Description("Check if user is able to create Time record with valid data")]
+    public void CreateMaterial_Test()
         {
 
-            // Initializing and defining WebDriver
-
-            IWebDriver driver = new ChromeDriver();
-
-            // Login page object initialization and definition
-
-            LoginPage loginObject = new LoginPage();
-            loginObject.LoginSteps(driver);
-
-            // Home page initialization and definition
-
+            // Home page object initialization and definition
             HomePage homePageObject = new HomePage();
             homePageObject.NavigateToTM(driver);
 
             // Time and Material page object initialization and definition
-
             TimeAndMaterialPage timeAndMaterialObject = new TimeAndMaterialPage();
             timeAndMaterialObject.CreateTimeAndMaterial(driver);
-
-            // Edit existing Time and Material test
-            timeAndMaterialObject.EditTimeAndMaterial(driver);
-
-            // Delete existing Time and Material test
-
-            timeAndMaterialObject.DeleteTimeAndMaterial(driver);
-
-
         }
 
+    [Test, Order (2), Description("Check if user is able to edit Time record with valid data")]
+    public void EditMaterial_Test()
+        {
+            // Edit existing Time and Material test
+            TimeAndMaterialPage timeAndMaterialObject = new TimeAndMaterialPage();
+            timeAndMaterialObject.EditTimeAndMaterial(driver);
+        }
 
+    [Test, Order (3), Description("Check if user is able to delete Time record")]
+    public void DeleteMaterial_Test()
+        { 
+            // Delete existing Time and Material test
+            TimeAndMaterialPage timeAndMaterialObject = new TimeAndMaterialPage();
+            timeAndMaterialObject.DeleteTimeAndMaterial(driver);
+        }
 
+    
     }
 
 }

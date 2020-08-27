@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using OpenQA.Selenium;
+using NUnit.Framework;
 
 namespace TurnUpPortal.Pages
 {
@@ -10,39 +11,49 @@ namespace TurnUpPortal.Pages
         {
             ////// Creating Material - without sleep unable to find code, description and price ////
 
-            IWebElement clickCreateNewButton = driver.FindElement(By.CssSelector(".btn-primary"));
-            clickCreateNewButton.Click();
-            Thread.Sleep(2000);
+           try
+            {
+                IWebElement clickCreateNewButton = driver.FindElement(By.CssSelector(".btn-primary"));
+                clickCreateNewButton.Click();
+                Thread.Sleep(2000);
+            }
+            catch(Exception ex)
+            {
+                Assert.Fail("Create new page did not launch", ex.Message);
+            }
 
-            IWebElement typeCode = driver.FindElement(By.Id("Code"));
-            IWebElement typeDescription = driver.FindElement(By.Id("Description"));
+
+            IWebElement codeTextbox = driver.FindElement(By.Id("Code"));
+            IWebElement descriptionTextbox = driver.FindElement(By.Id("Description"));
             IWebElement clickPrice = driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[4]/div/span[1]/span/input[1]"));
-            IWebElement typePrice = driver.FindElement(By.Id("Price"));
-            IWebElement clickSaveButtonTime = driver.FindElement(By.Id("SaveButton"));
+            IWebElement priceTextbox = driver.FindElement(By.Id("Price"));
+            IWebElement saveButton = driver.FindElement(By.Id("SaveButton"));
 
 
-            typeCode.SendKeys("Material");
-            typeDescription.SendKeys("Material description");
+            codeTextbox.SendKeys("Material");
+            descriptionTextbox.SendKeys("Material description");
             clickPrice.Click();
-            typePrice.SendKeys("200");
-            clickSaveButtonTime.Click();
+            priceTextbox.SendKeys("200");
+            saveButton.Click();
             Thread.Sleep(2000);
 
             //// ASSERTION ////
 
             IWebElement clickGoToLastPageButton = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/a[4]/span"));
             clickGoToLastPageButton.Click();
+            Thread.Sleep(5000);
 
             IWebElement findMaterialRecord = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[last()]/td[1]"));
 
             if (findMaterialRecord.Text == "Material")
             {
-                Console.WriteLine("Material record created successfully, test passed!");
+                Assert.Pass("Material record created successfully, test passed!");
             }
             else
             {
-                Console.WriteLine("Material record not created, test failed!");
+                Assert.Fail("Material record not created, test failed!");
             }
+          
         }
 
         public void EditTimeAndMaterial(IWebDriver driver)
@@ -59,16 +70,17 @@ namespace TurnUpPortal.Pages
 
             IWebElement clickGoToLastPageButton = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[4]/a[4]/span"));
             clickGoToLastPageButton.Click();
+            Thread.Sleep(3000);
 
             IWebElement findMaterialRecordEdited = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[last()]/td[1]"));
 
             if (findMaterialRecordEdited.Text == "MaterialEDITED")
             {
-                Console.WriteLine("Material record edited successfully, test passed!");
+                Assert.Pass("Material record edited successfully, test passed!");
             }
             else
             {
-                Console.WriteLine("Material record not edited, test failed!");
+                Assert.Fail("Material record not edited, test failed!");
             }
         }
 
@@ -88,11 +100,11 @@ namespace TurnUpPortal.Pages
 
             if (timeDeleted.Text != "MaterialEDITED")
             {
-                Console.WriteLine("Time record deleted successfully, test passed!");
+                Assert.Pass("Material record deleted successfully, test passed!");
             }
             else
             {
-                Console.WriteLine("Time record not deleted successfully, test failed!");
+                Assert.Fail("Material record not deleted successfully, test failed!");
             }
         }
     }

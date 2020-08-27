@@ -1,20 +1,38 @@
 ﻿<Properties StartupConfiguration="{C272DDFD-F832-4AA4-BDFF-7C77051FAE64}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TurnUpPortal/Pages/TimeAndMaterialPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TurnUpPortal/Pages/EmployeesPage.cs">
     <Files>
-      <File FileName="TurnUpPortal/Pages/EmployeesPage.cs" Line="1" Column="1" />
-      <File FileName="TurnUpPortal/Pages/HomePage.cs" Line="1" Column="1" />
-      <File FileName="TurnUpPortal/Pages/LoginPage.cs" Line="1" Column="1" />
-      <File FileName="TurnUpPortal/Pages/TimeAndMaterialPage.cs" Line="1" Column="1" />
+      <File FileName="TurnUpPortal/Pages/EmployeesPage.cs" Line="20" Column="81" />
+      <File FileName="TurnUpPortal/Pages/HomePage.cs" Line="19" Column="10" />
+      <File FileName="TurnUpPortal/Pages/LoginPage.cs" Line="41" Column="1" />
+      <File FileName="TurnUpPortal/Pages/TimeAndMaterialPage.cs" Line="108" Column="14" />
+      <File FileName="TurnUpPortal/Tests/TimeAndMaterialTest.cs" Line="33" Column="5" />
+      <File FileName="TurnUpPortal/Tests/EmployeesTest.cs" Line="45" Column="1" />
+      <File FileName="TurnUpPortal/Helpers/CommonDriver.cs" Line="23" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TurnUpPortal" expanded="True">
             <Node name="TurnUpPortal" expanded="True">
+              <Node name="Helpers" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="TimeAndMaterialPage.cs" selected="True" />
+                <Node name="EmployeesPage.cs" selected="True" />
               </Node>
               <Node name="Tests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="TurnUpPortal" expanded="True">
+            <Node name="TurnUpPortal" expanded="True">
+              <Node name="TurnUpPortal" expanded="True" selected="True">
+                <Node name="TimeAndMaterialTest" expanded="True" />
+              </Node>
+              <Node name="TurnUpPortal.Tests" expanded="True">
+                <Node name="EmployeesTest" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

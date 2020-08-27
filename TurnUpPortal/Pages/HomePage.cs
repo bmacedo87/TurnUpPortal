@@ -1,5 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
+using SeleniumExtras;
+using TurnUpPortal.Helpers;
 
 namespace TurnUpPortal.Pages
 {
@@ -16,7 +18,7 @@ namespace TurnUpPortal.Pages
             clickTimeAndMaterialsOption.Click();
         }
 
-        /*public void NavigateToEmployees(IWebDriver driver)
+        public void NavigateToEmployees(IWebDriver driver)
         {
             ////// Navigate to Employees page //////
 
@@ -25,6 +27,6 @@ namespace TurnUpPortal.Pages
 
             clickAdministrationDropbox.Click();
             clickEmployeesOption.Click();
-        }*/
+        }
     }
 }
